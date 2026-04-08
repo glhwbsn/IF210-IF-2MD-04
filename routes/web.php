@@ -20,5 +20,9 @@ Route::prefix('admin')->group(function () {
     });
 });
 
+Route::get('/listbarang/{id}/{nama}', function($id, $nama){
+    return view('list_barang', compact('id', 'nama'));
+});
+
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
