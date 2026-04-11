@@ -31,3 +31,4 @@ Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'tampilkan']
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/login', [HomeController::class, 'login']);
+Route::get('/ListItem', [HomeController::class, 'ListItem']);

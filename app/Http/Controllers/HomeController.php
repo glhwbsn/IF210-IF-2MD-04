@@ -25,6 +25,10 @@ class HomeController extends Controller
     {
         return view('login');
     }
+    public function ListItem()
+    {
+        return view('ListItem');
+    }
 }
 
 
