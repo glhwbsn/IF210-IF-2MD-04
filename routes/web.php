@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ListBarangController;
 use App\Http\Controllers\login;
+use App\Http\Controllers\GalehController;
 
 Route::get('/welcome', function () {
     return view('welcome');
@@ -32,3 +33,4 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/login', [HomeController::class, 'login']);
 Route::get('/ListItem', [HomeController::class, 'ListItem']);
+Route::get('/galeh', [GalehController::class, 'tampilkan']);
