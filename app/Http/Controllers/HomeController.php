@@ -29,6 +29,10 @@ class HomeController extends Controller
     {
         return view('ListItem');
     }
+    public function galeh_view()
+    {
+        return view('galeh_view');
+    }
 }
 
 
