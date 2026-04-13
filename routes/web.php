@@ -5,14 +5,18 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ListBarangController;
 use App\Http\Controllers\login;
 use App\Http\Controllers\GalehController;
+use App\Http\Controllers\DashboardController; // Tambahkan ini di atas
 
 Route::get('/welcome', function () {
     return view('welcome');
 });
 
 Route::get('/user/{id}', function ($id) {
-    return 'User dengan ID' . $id;
+    return 'User dengan ID ' . $id;
 });
+
+// Route untuk Dashboard (Gabungan Baru)
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::prefix('admin')->group(function () {
     Route::get('/dashboard', function (){
@@ -22,10 +26,6 @@ Route::prefix('admin')->group(function () {
         return 'Admin Users';
     });
 });
-
-//Route::get('/listbarang/{id}/{nama}', function($id, $nama){
-//    return view('list_barang', compact('id', 'nama'));
-//});
 
 Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'tampilkan']);
 
