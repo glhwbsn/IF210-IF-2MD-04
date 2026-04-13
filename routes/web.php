@@ -34,3 +34,4 @@ Route::get('/contact', [HomeController::class, 'contact']);
 Route::get('/login', [HomeController::class, 'login']);
 Route::get('/ListItem', [HomeController::class, 'ListItem']);
 Route::get('/galeh', [GalehController::class, 'tampilkan']);
+Route::get('/register', [HomeController::class, 'register']);
