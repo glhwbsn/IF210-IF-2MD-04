@@ -33,6 +33,10 @@ class HomeController extends Controller
     {
         return view('galeh_view');
     }
+    public function register()
+    {
+        return view('register');
+    }
 }
 
 
