@@ -57,7 +57,7 @@
                         <div class="text-center mt-4 pt-3 border-top">
                             <small class="register-link">
                                 Belum punya akun?
-                                <a href="">Daftar di sini</a>
+                                <a href="/register">Daftar di sini</a>
                             </small>
                         </div>
                     </div>
