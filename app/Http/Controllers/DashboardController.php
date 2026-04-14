@@ -8,13 +8,16 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        // Data dummy untuk ditampilkan di dashboard PBL kamu
+        // Semua data dikumpulkan di sini dalam satu array
         $data = [
-            'pageTitle' => 'Dashboard Proyek PBL',
-            'user' => 'Mahasiswa PBL', // Bisa diganti dengan Auth::user()->name jika sudah ada login
-            'status' => 'On Progress'
+            'pageTitle'    => 'Dashboard Rental Mobil',
+            'user'         => 'Mahasiswa PBL', // Nanti bisa diganti Auth::user()->name
+            'status'       => 'On Progress',
+            'totalMobil'   => 12,
+            'pesananAktif' => 3
         ];
 
+        // Kirim $data ke view 'dashboard'
         return view('dashboard', $data);
     }
 }

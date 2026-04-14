@@ -6,37 +6,39 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index ()
+    public function index()
     {
-        //$data = [
-          //  'nama' => 'budi',
-            //'pekerjaan' => 'Developer',
-        //];
-        //return view('home') ->with($data);
+        // Menggabungkan data profil dan data tema rental mobil
         $nama = "Teddy";
         $pekerjaan = "programmer";
-        return view('home', compact('nama', 'pekerjaan'));
+        $title = "SewaMobil - Rental Mobil Murah & Terpercaya";
+
+        // Menggunakan compact untuk mengirim semua variabel ke view 'home'
+        return view('home', compact('nama', 'pekerjaan', 'title'));
     }
+
     public function contact()
     {
         return view('contact');
     }
+
     public function login()
     {
         return view('login');
     }
+
     public function ListItem()
     {
         return view('ListItem');
     }
+
     public function galeh_view()
     {
         return view('galeh_view');
     }
+
     public function register()
     {
         return view('register');
     }
 }
-
-
