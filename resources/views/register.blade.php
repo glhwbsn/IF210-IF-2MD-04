@@ -91,7 +91,7 @@
                         <div class="text-center mt-4 pt-3 border-top">
                             <small class="login-link">
                                 Sudah punya akun?
-                                <a href="">
+                                <a href="/login">
                                     Masuk di sini
                                 </a>
                             </small>

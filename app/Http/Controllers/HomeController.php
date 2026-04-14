@@ -41,4 +41,14 @@ class HomeController extends Controller
     {
         return view('register');
     }
-}
+
+    public function about()
+    {
+        return view('about');
+    }
+
+    public function product()
+    {
+        return view('product');
+    }
+}  

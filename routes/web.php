@@ -5,8 +5,9 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ListBarangController;
 use App\Http\Controllers\login;
 use App\Http\Controllers\GalehController;
-use App\Http\Controllers\DashboardController; // Tambahkan ini di atas
-
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ProductController; 
+use App\Http\Controllers\AboutController;
 Route::get('/welcome', function () {
     return view('welcome');
 });
@@ -35,3 +36,5 @@ Route::get('/login', [HomeController::class, 'login']);
 Route::get('/ListItem', [HomeController::class, 'ListItem']);
 Route::get('/galeh', [GalehController::class, 'tampilkan']);
 Route::get('/register', [HomeController::class, 'register']);
+Route::get('/about', [HomeController::class, 'about']);
+Route::get('/product', [ProductController::class, 'index']);
